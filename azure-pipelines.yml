@@ -5,6 +5,15 @@
 
 trigger:
 - main
+- develop
+- MFA*
+
+# specific branch
+pr:
+  branches:
+    include:
+    - main
+    - releases/*
 
 pool:
   vmImage: ubuntu-latest
